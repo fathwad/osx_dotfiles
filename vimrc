@@ -17,6 +17,7 @@ set expandtab
 set nowrap
 set mouse=a
 set foldmethod=indent
+set foldlevelstart=99
 set hlsearch
 set wildignore+=*.pyc,*.sqlite,*.dump,*.lst
 
@@ -30,6 +31,8 @@ nnoremap <Leader>q :tabclose<CR>
 nnoremap <Leader>w <C-w>w
 nnoremap <Leader>B <C-w>_<C-w>\|
 nnoremap <Leader>E <C-w>=
+nnoremap <F3> zR
+nnoremap <F4> zM
 
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['python', 'javascript'] }
 let g:syntastic_python_checkers = ['pyflakes']
